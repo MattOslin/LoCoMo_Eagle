@@ -4891,7 +4891,7 @@ at 27/07/2012 14:20:03</description>
 <instance part="+3V5" gate="G$1" x="22.86" y="157.48"/>
 <instance part="R7" gate="G$1" x="35.56" y="149.86"/>
 <instance part="R6" gate="G$1" x="35.56" y="142.24"/>
-<instance part="KEY" gate="G$1" x="170.18" y="187.96"/>
+<instance part="KEY" gate="G$1" x="142.24" y="187.96"/>
 <instance part="D1" gate="G$1" x="12.7" y="144.78" rot="R90"/>
 <instance part="P+3" gate="VCC" x="12.7" y="157.48"/>
 <instance part="R9" gate="G$1" x="63.5" y="172.72"/>
@@ -4957,10 +4957,10 @@ at 27/07/2012 14:20:03</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="162.56" y1="182.88" x2="152.4" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="152.4" y1="180.34" x2="152.4" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="KEY" gate="G$1" pin="3"/>
+<pinref part="KEY" gate="G$1" pin="4"/>
+<wire x1="152.4" y1="182.88" x2="149.86" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
@@ -5314,11 +5314,6 @@ at 27/07/2012 14:20:03</description>
 </net>
 <net name="RST" class="0">
 <segment>
-<label x="152.4" y="193.04" size="1.778" layer="95"/>
-<pinref part="KEY" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="193.04" x2="152.4" y2="193.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="185.42" x2="215.9" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="185.42" x2="215.9" y2="182.88" width="0.1524" layer="91"/>
@@ -5334,6 +5329,11 @@ at 27/07/2012 14:20:03</description>
 <pinref part="ESP12" gate="G$1" pin="RESET"/>
 <wire x1="43.18" y1="63.5" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
 <label x="35.56" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="KEY" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="193.04" x2="157.48" y2="193.04" width="0.1524" layer="91"/>
+<label x="152.4" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EN" class="0">
