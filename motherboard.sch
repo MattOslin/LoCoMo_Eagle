@@ -4806,7 +4806,7 @@ at 27/07/2012 14:20:03</description>
 <part name="KEY" library="CUSTOM" deviceset="BUTTON" device="" value="PTS810"/>
 <part name="D1" library="CUSTOM" deviceset="B130-13-F" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="R9" library="resistor" deviceset="R-US_" device="R0603" value="5k"/>
+<part name="R9" library="resistor" deviceset="R-US_" device="R0603" value="5.1k"/>
 <part name="R8" library="resistor" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
@@ -4836,8 +4836,8 @@ at 27/07/2012 14:20:03</description>
 <part name="WIPER" library="CUSTOM" deviceset="BOURNS_4PIN" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="U$2" library="CUSTOM" deviceset="BI_LED" device=""/>
-<part name="R11" library="resistor" deviceset="R-US_" device="R0603" value="100"/>
-<part name="R12" library="resistor" deviceset="R-US_" device="R0603" value="100"/>
+<part name="R11" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
+<part name="R12" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
 <part name="U$3" library="CUSTOM" deviceset="4PIN_HEADER" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
