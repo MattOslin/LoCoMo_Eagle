@@ -226,8 +226,8 @@
 <wire x1="-2.5" y1="-7" x2="-2.5" y2="0" width="0.127" layer="21"/>
 <smd name="P1" x="-1.27" y="0.97" dx="2.26" dy="1.27" layer="1" rot="R90"/>
 <smd name="P2" x="1.27" y="0.97" dx="2.26" dy="1.27" layer="1" rot="R90"/>
-<smd name="P$3" x="-1.27" y="-6.47" dx="2.26" dy="1.27" layer="1" rot="R90"/>
-<smd name="P$4" x="1.27" y="-6.47" dx="2.26" dy="1.27" layer="1" rot="R90"/>
+<smd name="P4" x="-1.27" y="-6.47" dx="2.26" dy="1.27" layer="1" rot="R90"/>
+<smd name="P3" x="1.27" y="-6.47" dx="2.26" dy="1.27" layer="1" rot="R90"/>
 <wire x1="-2.5" y1="0" x2="-2.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="0" x2="2.5" y2="0" width="0.127" layer="21"/>
 <text x="-2" y="-3" size="1.27" layer="25">&gt;NAME</text>
@@ -1221,9 +1221,11 @@
 <pin name="P1" x="-7.62" y="2.54" length="middle"/>
 <pin name="P2" x="-7.62" y="-2.54" length="middle"/>
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="P4" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="P3" x="12.7" y="-2.54" length="middle" rot="R180"/>
 </symbol>
 <symbol name="RING3">
 <wire x1="-7.62" y1="2.54" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
@@ -1256,6 +1258,8 @@
 <connects>
 <connect gate="G$1" pin="P1" pad="P1"/>
 <connect gate="G$1" pin="P2" pad="P2"/>
+<connect gate="G$1" pin="P3" pad="P3"/>
+<connect gate="G$1" pin="P4" pad="P4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1349,6 +1353,9 @@
 <pinref part="GND25" gate="1" pin="GND"/>
 <wire x1="66.04" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="53.34" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="CONN" gate="G$1" pin="P3"/>
+<wire x1="86.36" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
+<junction x="66.04" y="53.34"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -1367,6 +1374,9 @@
 <pinref part="P+7" gate="VCC" pin="VCC"/>
 <wire x1="66.04" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="58.42" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="CONN" gate="G$1" pin="P4"/>
+<wire x1="66.04" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
+<junction x="66.04" y="58.42"/>
 </segment>
 </net>
 <net name="AGND" class="0">

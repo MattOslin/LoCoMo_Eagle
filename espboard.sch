@@ -4405,8 +4405,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C12" library="Seeed-OPL-Capacitor" deviceset="CERAMIC-1PF-50V-0.25PF-NPO(0603)" device="" value="100nF"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="CUSTOM" deviceset="BI_LED" device=""/>
-<part name="R11" library="resistor" deviceset="R-US_" device="R0603" value="100"/>
-<part name="R12" library="resistor" deviceset="R-US_" device="R0603" value="100"/>
+<part name="R11" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
+<part name="R12" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 </parts>
